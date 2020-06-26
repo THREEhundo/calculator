@@ -1,0 +1,173 @@
+body {
+  background-color: #E1DEE3;
+}
+
+button {
+  background-color: #2B3B30;
+  color: #E1DEE3;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: inherit;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+*:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+span {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 350px;
+  overflow-wrap: break-word;
+  min-height: 1.5em;
+  height: auto;
+  margin: 0 auto;
+}
+
+#calculator {
+  background-color: #3A4F41;
+  color: #E1DEE3;
+  width: 350px;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 0.4em 25px 1em;
+  border-radius: 30px;
+}
+
+#displayContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+#history {
+  width: 100%;
+  height: max-content;
+  margin: auto;
+  padding-top: 15px;
+  font-size: 1.5em;
+  text-align: right;
+  display: flex;
+}
+
+#view {
+  width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 2.5em;
+  text-align: right;
+  border-top: 1px dotted #D5A18E;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "clear del divide multi"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equals"
+    "z z dec equals";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 70px);
+  grid-gap: 0.09em 0.09em;
+}
+
+.operator:hover {
+  background-color: #91263e;
+}
+
+.numbers:hover {
+  background-color: rgba(169, 169, 169, 0.7);
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#del {
+  grid-area: del;
+  padding-bottom: 5px;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multi;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#equals {
+  grid-area: equals;
+  background-color: #D5A18E;
+}
+
+#equals:hover {
+  background-color: #D6886B;
+}
+
+#zero {
+  grid-area: z;
+}
+
+#decimal {
+  grid-area: dec;
+}
