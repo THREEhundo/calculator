@@ -1,5 +1,7 @@
 # Calculator
 
+[Calculator](https://threehundo.github.io/calculator/)
+
 ## Functionality
 
 * Clicking on the buttons & using the number pad will allow you to use all the functions available.
